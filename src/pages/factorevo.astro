@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+---
+<Base
+  title="Trucker Copilot and FactorEvo | From the Cab to Capital"
+  description="See how Trucker Copilot captures load activity while FactorEvo powers the transportation finance workflow behind funding, servicing, and collections."
+>
+  <section class="hero" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <span class="eyebrow">The FactorEvo Connection</span>
+      <h1>One ecosystem from the cab to the funding decision.</h1>
+      <p class="lead" style="color:var(--text-muted); max-width:44em;">
+        Trucker Copilot and FactorEvo solve different parts of the same problem. Trucker Copilot
+        gives drivers and carriers a practical way to capture and follow the transaction. FactorEvo
+        gives participating specialty finance companies the infrastructure to evaluate evidence,
+        make funding decisions, service receivables, and manage the financial relationship.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container">
+      <div class="grid grid--3">
+        <div class="card">
+          <div class="card__icon">🚛</div>
+          <h3>Trucker Copilot owns the front line</h3>
+          <p>Drivers, dispatchers, and carriers use Trucker Copilot to capture load events, submit documents, communicate, and follow status.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🏦</div>
+          <h3>FactorEvo powers the financial workflow</h3>
+          <p>Participating finance companies use FactorEvo to receive transactions, read and classify documents, evaluate risk, verify information, manage funding, service receivables, communicate, reconcile activity, and support collections.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📡</div>
+          <h3>Signals connect the two</h3>
+          <p>The activity captured through Trucker Copilot becomes structured evidence within FactorEvo. That connection reduces reentry, protects context, and gives authorized participants one record from the road to the financial decision.</p>
+        </div>
+      </div>
+
+      <div class="cta-band mt-2" style="padding:2.4rem 2rem;">
+        <p style="font-size:1.35rem; font-weight:800; color:#fff; margin:0;">
+          Trucker Copilot lives in the cab. FactorEvo powers the rails.<br />Signals tell the system what is true.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="From the cab to capital."
+    primaryLabel="Get Trucker Copilot"
+    primaryHref="/download"
+    secondaryLabel="Explore Signals"
+    secondaryHref="/signals"
+  />
+</Base>

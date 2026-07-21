@@ -1,0 +1,194 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const shots = [
+  'https://play-lh.googleusercontent.com/OgbRAtHcyosAbnKTQgINe1CC9ZwIMAafRxI_WZSWE1KM2gkFiGuAoMmryVHDFTuWEROKC0vvUh9EqfktuPzg=w1080',
+  'https://play-lh.googleusercontent.com/sopiKD52uGXbOoNzH5k5HVdv2a0hbPb7N80zfoS-KL4fp6jP8sQ65yVbvQvfiGhgy7VnaVjXPJmxUmmKyApGcFY=w1080'
+];
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Trucker Copilot',
+    url: 'https://truckercopilot.com',
+    logo: 'https://truckercopilot.com/brand/logo-big.png',
+    parentOrganization: { '@type': 'Organization', name: 'FactorEvo Group Holdings' }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Trucker Copilot',
+    operatingSystem: 'Android',
+    applicationCategory: 'BusinessApplication',
+    url: 'https://truckercopilot.com',
+    installUrl: 'https://play.google.com/store/apps/details?id=com.truckercopilot.truckercopilotapp',
+    description: 'Capture load documents, follow funding status, and connect with transportation finance companies through one trucking app built for drivers and carriers.'
+  }
+];
+---
+<Base
+  title="Trucker Copilot | From Delivered to Funded"
+  description="Capture load documents, follow funding status, and connect with transportation finance companies through one trucking app built for drivers and carriers."
+  schema={schema}
+>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow">The Financial Access Layer for Trucking</span>
+        <h1>From delivered to funded.</h1>
+        <p class="lead">
+          Trucker Copilot connects your loads, documents, funding status, and business Signals to
+          transportation finance companies built to understand trucking. Capture the proof from the
+          cab, follow what happens next, and keep your business moving without chasing paperwork or
+          phone calls.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="/download">Get Trucker Copilot</a>
+          <a class="btn btn--ghost btn--lg" href="/how-it-works">See How It Works</a>
+        </div>
+        <p class="hero__trust">For drivers, owner operators, dispatchers, and fleets.</p>
+      </div>
+      <div style="display:flex; gap:1.2rem; justify-content:center;">
+        <div class="phone-frame"><img src={shots[0]} alt="Trucker Copilot app screen showing load and document workflow" loading="eager" onerror="this.parentElement.classList.add('ph-fallback');this.remove()" /></div>
+        <div class="phone-frame" style="margin-top:2.5rem;"><img src={shots[1]} alt="Trucker Copilot app screen showing funding status" loading="lazy" onerror="this.parentElement.classList.add('ph-fallback');this.remove()" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Your work should not disappear into an inbox</h2>
+        <p>
+          You delivered the load. The paperwork should not become another trip. Trucker Copilot
+          gives you one place to capture documents, confirm delivery, submit completed work,
+          communicate with your team, and see where funding stands.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONE LOAD PATH -->
+  <section class="section section--soft">
+    <div class="container">
+      <h2>One load. One clear path forward.</h2>
+      <div class="grid grid--4 mt-2">
+        <div class="card">
+          <div class="card__icon">📸</div>
+          <h3>Capture it</h3>
+          <p>Upload invoices, rate confirmations, bills of lading, proof of delivery, and supporting documents directly from your phone.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">✅</div>
+          <h3>Verify it</h3>
+          <p>Trucker Copilot organizes the load evidence and sends it into the FactorEvo infrastructure for document reading, verification, and review.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📡</div>
+          <h3>Follow it</h3>
+          <p>See status as the load moves through submission, review, approval, and funding with your selected finance provider.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📈</div>
+          <h3>Use the Signals</h3>
+          <p>Build a stronger operating record through verified load activity, broker information, documents, delivery events, and payment history.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KNOW BEFORE YOU HAUL -->
+  <section class="section">
+    <div class="container hero__grid">
+      <div>
+        <h2>Know before you haul</h2>
+        <p style="color:var(--text-muted); font-size:1.1rem;">
+          A good rate can become a bad load when the broker is weak, the documents are incomplete,
+          or payment takes too long. Trucker Copilot brings operational and financial information
+          closer to the decision so carriers can move with better context.
+        </p>
+        <p style="color:var(--text-faint); font-size:0.92rem;">
+          Broker and shipper credit visibility is available when provided through your participating
+          finance company and connected data services.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="/signals">Explore Signals</a>
+          <a class="btn btn--ghost" href="/funding-network">Learn About the Funding Network</a>
+        </div>
+      </div>
+      <div class="placeholder" style="min-height:320px;">
+        Broker &amp; credit visibility screenshot<br />coming soon
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPITAL -->
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Capital built around how trucking works</h2>
+        <p>
+          Trucker Copilot connects carriers with participating specialty finance companies that
+          understand freight invoices, brokers, shippers, fuel pressure, and the daily reality of
+          keeping trucks moving. You choose the provider. The provider determines eligibility and
+          terms. Trucker Copilot keeps the transaction connected.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILT FOR THE ROAD -->
+  <section class="section">
+    <div class="container">
+      <h2>Built for the road</h2>
+      <div class="grid grid--4 mt-2">
+        <div class="card">
+          <div class="card__icon">📱</div>
+          <h3>Simple mobile experience</h3>
+          <p>Capture and submit what matters without navigating software built for a back office.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📶</div>
+          <h3>Works through changing connectivity</h3>
+          <p>The mobile experience is designed around the reality that the road does not always come with a perfect signal.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🌎</div>
+          <h3>Multilingual interaction</h3>
+          <p>Communicate and work in the language that makes the operation clearer.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🚛</div>
+          <h3>Independent to enterprise</h3>
+          <p>Use Trucker Copilot as an owner operator, dispatcher, growing fleet, or large carrier operation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POWERED BY FACTOREVO -->
+  <section class="section section--soft">
+    <div class="container center">
+      <h2>Powered by FactorEvo</h2>
+      <p style="color:var(--text-muted); max-width:44em; margin:0 auto 1.6rem; font-size:1.1rem;">
+        Trucker Copilot lives in the cab. FactorEvo powers the specialty finance infrastructure
+        behind the transaction. Together, they create one connected path from load activity to the
+        funding decision.
+      </p>
+      <a class="btn btn--primary" href="/factorevo">See the FactorEvo Connection</a>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Stop chasing the money you already earned."
+    body="Capture the load, send the proof, follow the status, and stay connected from the road."
+    primaryLabel="Join Trucker Copilot"
+    primaryHref="/download"
+    secondaryLabel="Connect With a Finance Company"
+    secondaryHref="/funding-network"
+  />
+</Base>

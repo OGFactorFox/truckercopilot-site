@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+---
+<Base
+  title="Trucker Copilot for Dispatchers | Connected Load Visibility"
+  description="Keep drivers, load documents, delivery events, invoice submission, and funding communication connected through one dispatcher workflow."
+>
+  <section class="hero" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <span class="eyebrow">For Dispatchers</span>
+      <h1>See the load without chasing the driver.</h1>
+      <p class="lead" style="color:var(--text-muted); max-width:44em;">
+        Dispatchers sit in the middle of every moving part. Trucker Copilot connects the driver,
+        load activity, documents, and financial status so the dispatcher can solve exceptions
+        instead of hunting for information.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container">
+      <h2>Keep every moving part connected</h2>
+      <div class="grid grid--2 mt-2">
+        <div class="card">
+          <div class="card__icon">🗺️</div>
+          <h3>Shared load activity</h3>
+          <p>Follow pickup, delivery, document, and submission activity from the same transaction.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📄</div>
+          <h3>Document visibility</h3>
+          <p>See what has been submitted and what may still be needed before billing or funding can move forward.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">💬</div>
+          <h3>Contextual communication</h3>
+          <p>Keep questions attached to the load so the next person does not have to reconstruct the story.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📞</div>
+          <h3>Fewer status calls</h3>
+          <p>Give authorized users direct visibility into the transaction status supported by the selected finance company.</p>
+        </div>
+        <div class="card" style="grid-column: 1 / -1;">
+          <div class="card__icon">🚛</div>
+          <h3>Support more trucks</h3>
+          <p>Create a consistent operating process across independent drivers, small fleets, and enterprise carrier teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Dispatch the freight. Keep the evidence moving with it."
+    primaryLabel="Join as a Dispatcher"
+    primaryHref="/download"
+    secondaryLabel="See How It Works"
+    secondaryHref="/how-it-works"
+  />
+</Base>

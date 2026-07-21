@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+
+const paths = [
+  { icon: '🚛', t: 'I am a driver', d: 'Join an existing carrier or accept an invitation from your fleet or dispatcher.' },
+  { icon: '🔑', t: 'I am an owner operator', d: 'Create your carrier profile, add your operating information, and connect your loads and documents.' },
+  { icon: '🏢', t: 'I manage a fleet', d: 'Create your organization, invite drivers and dispatchers, and establish the workflow across your operation.' },
+  { icon: '🗺️', t: 'I am a dispatcher', d: 'Join the carriers you support and work from the same connected load record.' },
+  { icon: '💰', t: 'I need a finance company', d: 'Tell us about the business and request a connection to participating providers.' }
+];
+---
+<Base
+  title="Download Trucker Copilot | Join the Transportation Finance Network"
+  description="Download Trucker Copilot or register your carrier to submit load documents, follow funding status, and connect with participating finance companies."
+>
+  <section class="hero" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <span class="eyebrow">Download &amp; Registration</span>
+      <h1>Put the financial side of every load in your pocket.</h1>
+      <p class="lead" style="color:var(--text-muted); max-width:44em;">
+        Join Trucker Copilot to capture load documents, follow transaction status, build an
+        operating record, and connect with participating transportation finance companies.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="https://play.google.com/store/apps/details?id=com.truckercopilot.truckercopilotapp" rel="noopener" target="_blank">Get it on Google Play</a>
+        <span class="btn btn--ghost btn--lg" style="cursor:default;" title="Coming soon">App Store — Coming Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container">
+      <h2>Choose your path</h2>
+      <div class="grid grid--3 mt-2">
+        {paths.map((p) => (
+          <div class="card">
+            <div class="card__icon">{p.icon}</div>
+            <h3>{p.t}</h3>
+            <p>{p.d}</p>
+          </div>
+        ))}
+      </div>
+      <div class="disclaimer mt-2">
+        Creating a Trucker Copilot account does not obligate you to enter a financing agreement. Any
+        financing offer is made separately by the participating provider and remains subject to its
+        terms.
+      </div>
+    </div>
+  </section>
+</Base>

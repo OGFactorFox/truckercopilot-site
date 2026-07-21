@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const signals = [
+  { icon: '🪪', t: 'Identity Signals', d: 'Information that helps confirm who is operating, who is communicating, and whether the parties attached to the transaction match the record.' },
+  { icon: '🏛️', t: 'Authority Signals', d: 'FMCSA and operating information that helps show whether a carrier or related transportation party is active and aligned with the transaction.' },
+  { icon: '📄', t: 'Document Signals', d: 'Invoices, rate confirmations, bills of lading, proof of delivery, receipts, and other evidence examined for completeness, consistency, and connection to the load.' },
+  { icon: '📍', t: 'Movement Signals', d: 'Pickup, delivery, location, and connected transportation activity that can support the story of where and when the freight moved.' },
+  { icon: '💳', t: 'Credit Signals', d: 'Available broker, shipper, debtor, and payment information that can help carriers and finance providers understand counterparty risk.' },
+  { icon: '💵', t: 'Payment Signals', d: 'Funding, collection, exception, and payment activity that can create a clearer operating history over time.' }
+];
+---
+<Base
+  title="Trucking Signals | Better Evidence Behind Every Load"
+  description="Learn how Trucker Copilot turns identity, authority, documents, delivery, broker credit, and payment activity into Signals that support clearer decisions."
+>
+  <section class="hero" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <span class="eyebrow">Signals</span>
+      <h1>The load is already telling you the truth.</h1>
+      <p class="lead" style="color:var(--text-muted); max-width:44em;">
+        A Signal is verified activity that helps explain the people, documents, movement, credit,
+        and payment behavior surrounding a transaction. Trucker Copilot captures Signals closer to
+        the moment they happen. FactorEvo makes those Signals usable within the financial workflow.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container">
+      <div class="grid grid--3">
+        {signals.map((s) => (
+          <div class="card">
+            <div class="card__icon">{s.icon}</div>
+            <h3>{s.t}</h3>
+            <p>{s.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Why Signals matter to a carrier</h2>
+        <p>
+          Better evidence can mean fewer questions, earlier identification of missing information,
+          stronger decisions before accepting a load, and a cleaner path through the funding
+          process. Signals do not guarantee funding. They reduce the fog around the transaction.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Stronger evidence. Fewer questions. A faster path to getting paid."
+    primaryLabel="See How Signals Move"
+    primaryHref="/how-it-works"
+    secondaryLabel="Join Trucker Copilot"
+    secondaryHref="/download"
+  />
+</Base>

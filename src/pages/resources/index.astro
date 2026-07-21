@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const articles = [
+  { slug: 'how-to-get-paid-faster-after-delivering-a-load', t: 'How to Get Paid Faster After Delivering a Load', d: 'The practical levers that determine how quickly a delivered load turns into money.' },
+  { slug: 'freight-factoring-for-owner-operators', t: 'Freight Factoring for Owner Operators: What It Is and What to Compare', d: 'A plain-language guide to factoring and the terms that actually matter.' },
+  { slug: 'documents-needed-for-freight-factoring', t: 'The Documents Required to Factor a Freight Invoice', d: 'The paperwork every finance provider expects, and why each piece matters.' },
+  { slug: 'freight-broker-credit-check', t: 'How to Check a Freight Broker Before Accepting a Load', d: 'Reduce the risk of hauling for a broker who cannot or will not pay.' },
+  { slug: 'recourse-vs-nonrecourse-factoring', t: 'Recourse and Nonrecourse Factoring Explained for Carriers', d: 'What each structure really means for your risk and your rate.' },
+  { slug: 'why-freight-invoices-get-held', t: 'Why Freight Invoices Get Held and How to Prevent It', d: 'The most common funding delays and how to avoid them before they start.' },
+  { slug: 'proof-of-delivery-for-funding', t: 'What Proof of Delivery Means for Funding', d: 'Why the POD is the single most important document after delivery.' },
+  { slug: 'owner-operator-cash-flow', t: 'How Owner Operators Can Protect Cash Flow Between Loads', d: 'Practical ways to keep money moving when payment cycles stretch.' },
+  { slug: 'same-day-freight-funding', t: 'Same Day Freight Funding: What Determines the Actual Timing', d: 'What "same day" really depends on — and how to stack the odds in your favor.' },
+  { slug: 'carrier-signals', t: 'What Carrier Signals Tell a Finance Company', d: 'How verified operating activity shapes the way providers see your business.' },
+  { slug: 'reduce-missing-load-documents', t: 'How Dispatchers Can Reduce Missing Load Documents', d: 'A dispatcher playbook for keeping paperwork complete and funding on track.' },
+  { slug: 'choosing-a-transportation-factoring-company', t: 'Choosing a Transportation Factoring Company', d: 'The questions to ask before signing with any freight finance provider.' }
+];
+---
+<Base
+  title="Trucking Resources | Cash Flow, Factoring and Documents | Trucker Copilot"
+  description="Practical guidance on freight documents, cash flow, broker risk, factoring, fuel pressure, operating authority, and the Signals that affect what happens after delivery."
+>
+  <section class="hero" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <span class="eyebrow">Resources</span>
+      <h1>Practical answers for running a stronger trucking business.</h1>
+      <p class="lead" style="color:var(--text-muted); max-width:44em;">
+        Get direct guidance on freight documents, cash flow, broker risk, factoring, fuel pressure,
+        operating authority, and the Signals that affect what happens after delivery.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container">
+      <div class="grid grid--3">
+        {articles.map((a) => (
+          <a href={`/resources/${a.slug}`} class="card" style="text-decoration:none; display:block;">
+            <h3 style="color:var(--text);">{a.t}</h3>
+            <p>{a.d}</p>
+            <p style="color:var(--primary); font-weight:700; margin-top:0.8rem;">Read the guide →</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="From delivered to funded."
+    primaryLabel="Get Trucker Copilot"
+    primaryHref="/download"
+    secondaryLabel="Explore the Funding Network"
+    secondaryHref="/funding-network"
+  />
+</Base>

@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+---
+<Base
+  title="Trucker Copilot for Trucking Fleets | Load and Funding Visibility"
+  description="Give drivers, dispatchers, and finance teams one connected view of load documents, delivery activity, invoice submission, and funding status."
+>
+  <section class="hero" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <span class="eyebrow">For Fleets</span>
+      <h1>One operating record across every truck.</h1>
+      <p class="lead" style="color:var(--text-muted); max-width:44em;">
+        Growth creates distance between the cab, dispatch, billing, and the people managing cash.
+        Trucker Copilot closes that distance by connecting drivers and office teams to the same load
+        record.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container">
+      <h2>Built for fleet operations</h2>
+      <div class="grid grid--2 mt-2">
+        <div class="card">
+          <div class="card__icon">📸</div>
+          <h3>Standardize document capture</h3>
+          <p>Give every driver a clear process for submitting the documents required to bill and fund completed freight.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">⏱️</div>
+          <h3>Reduce billing delays</h3>
+          <p>Move completed load evidence into review without waiting for paper to reach the office.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">👥</div>
+          <h3>Create shared visibility</h3>
+          <p>Let authorized teams follow loads, missing information, submissions, and funding status from one connected record.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📈</div>
+          <h3>Scale without adding the same overhead</h3>
+          <p>Use automation and connected workflows to handle more transactions without multiplying repetitive administrative work.</p>
+        </div>
+        <div class="card" style="grid-column: 1 / -1;">
+          <div class="card__icon">🔗</div>
+          <h3>Connect transportation systems <span class="badge-soon">Where enabled</span></h3>
+          <p>Integrate with available TMS, ELD, telematics, accounting, banking, load board, and fuel systems through the FactorEvo ecosystem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="More trucks should create more capacity, not more confusion."
+    primaryLabel="Talk With Our Fleet Team"
+    primaryHref="/download"
+    secondaryLabel="Explore the Features"
+    secondaryHref="/features"
+  />
+</Base>

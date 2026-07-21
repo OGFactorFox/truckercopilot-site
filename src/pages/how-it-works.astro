@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const steps = [
+  { t: 'Create or receive the load', d: 'Load information enters Trucker Copilot through the driver, dispatcher, fleet, or a connected transportation system. The people responsible for the load work from the same transaction instead of rebuilding it across texts, email, and paper.' },
+  { t: 'Capture activity as it happens', d: 'Record pickup, delivery, confirmations, load details, and supporting documents from the road. Trucker Copilot keeps the operational record connected to the financial transaction.' },
+  { t: 'Submit the completed load', d: 'Upload the invoice, rate confirmation, bill of lading, proof of delivery, and any required supporting documents. The information moves into the FactorEvo infrastructure without manual reentry.' },
+  { t: 'Turn activity into Signals', d: 'Documents, identity, authority, delivery events, broker credit information, communication, and other verified activity become Signals. Those Signals give the finance provider more context around what happened and what requires attention.' },
+  { t: 'Follow the funding decision', d: 'See the transaction status as your selected finance provider reviews eligibility, verifies the evidence, and makes the funding decision. Timing and approval remain subject to provider requirements and terms.' },
+  { t: 'Keep the operating record', d: 'The load does not vanish after submission. Trucker Copilot preserves the connected activity so drivers, dispatchers, carriers, and authorized finance teams can work from a shared record.' }
+];
+---
+<Base
+  title="How Trucker Copilot Works | Load Documents to Funding"
+  description="See how Trucker Copilot connects load activity, delivery documents, Signals, and transportation finance companies from the cab to the funding decision."
+>
+  <section class="hero" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <span class="eyebrow">How It Works</span>
+      <h1>One connected path from the load to the money.</h1>
+      <p class="lead" style="color:var(--text-muted); max-width:44em;">
+        Trucker Copilot reduces the gap between completing the work and getting the transaction into
+        the hands of the people who can fund it. Every step creates clearer evidence, better
+        visibility, and fewer reasons for the process to stop.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container">
+      <div class="steps">
+        {steps.map((s) => (
+          <div class="step">
+            <div class="step__num"></div>
+            <div>
+              <h3>{s.t}</h3>
+              <p>{s.d}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="The work already happened. The evidence should move just as fast."
+    primaryLabel="Join Trucker Copilot"
+    primaryHref="/download"
+    secondaryLabel="Explore the Features"
+    secondaryHref="/features"
+  />
+</Base>

@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const faqs = [
+  { q: 'What is Trucker Copilot?', a: 'Trucker Copilot is a mobile and connected operating experience for drivers, owner operators, dispatchers, and fleets. It helps users capture load activity, submit documents, follow transaction status, communicate, and connect with participating transportation finance companies.' },
+  { q: 'Is Trucker Copilot a factoring company?', a: 'No. Trucker Copilot is not a lender or factoring company. It connects carriers and transaction information with participating specialty finance companies. Any financing agreement is directly between the carrier and the selected provider.' },
+  { q: 'How does Trucker Copilot help me get paid?', a: 'Trucker Copilot helps you capture and submit completed load evidence quickly, reduce missing information, and follow the transaction through your selected finance provider. Approval and funding timing depend on provider requirements and eligibility.' },
+  { q: 'What documents can I submit?', a: 'Depending on the provider workflow, you may submit invoices, rate confirmations, bills of lading, proof of delivery, receipts, and other supporting documents required for the load.' },
+  { q: 'Can I see my funding status?', a: 'Yes, when your participating finance company supports connected status updates. Authorized users can see the stage of the submitted transaction without relying only on calls or email.' },
+  { q: 'What are Signals?', a: 'Signals are verified activities and information surrounding a transaction, such as identity, authority, documents, delivery, broker credit, communication, and payment behavior. They help reduce uncertainty and identify what needs attention.' },
+  { q: 'Does Trucker Copilot guarantee funding?', a: 'No. Financing decisions, rates, advance amounts, reserves, timing, and legal terms are determined by the selected finance provider.' },
+  { q: 'Can Trucker Copilot help me find a finance company?', a: 'Yes. Carriers can request a connection to participating specialty finance companies. Providers decide whether they can offer a program based on the information submitted and their own requirements.' },
+  { q: 'Can my drivers and dispatcher use the same account?', a: 'Trucker Copilot is designed for role based participation across drivers, dispatchers, carrier managers, and authorized partners. Each person should use access appropriate to their responsibilities.' },
+  { q: 'Does it work for owner operators and fleets?', a: 'Yes. The experience is designed to support independent owner operators, growing fleets, dispatchers, and enterprise carrier operations.' },
+  { q: 'What is FactorEvo?', a: 'FactorEvo is the specialty finance operating system behind participating providers in the network. Trucker Copilot captures activity at the carrier level while FactorEvo supports the financial workflow behind the transaction.' },
+  { q: 'Who owns Trucker Copilot?', a: 'Trucker Copilot is part of the FactorEvo Group Holdings ecosystem and is being developed in strategic partnership with CargoNerd.' }
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a }
+  }))
+};
+---
+<Base
+  title="Trucker Copilot FAQ | Funding, Documents and Carrier Access"
+  description="Get answers about Trucker Copilot, transportation factoring connections, document submission, funding status, Signals, FactorEvo, and carrier eligibility."
+  schema={schema}
+>
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <span class="eyebrow">FAQ</span>
+      <h1>Frequently asked questions</h1>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0.5rem;">
+    <div class="container container--narrow">
+      {faqs.map((f) => (
+        <details class="faq-item">
+          <summary>{f.q}</summary>
+          <div><p style="margin:0;">{f.a}</p></div>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Still have questions?"
+    body="Join Trucker Copilot or reach out — we are happy to walk through how the network fits your operation."
+    primaryLabel="Join Trucker Copilot"
+    primaryHref="/download"
+    secondaryLabel="See How It Works"
+    secondaryHref="/how-it-works"
+  />
+</Base>

@@ -1,0 +1,75 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const shot = 'https://play-lh.googleusercontent.com/uLjqHtRvjUdbMlguzXzadp6rBnZFdD5Vz5kv4-_hWvHA5NMzdyH3s6fhSd2T522b_4lun2VFno5VQw077ouFVg=w1080';
+---
+<Base
+  title="Trucker Copilot for Owner Operators | Get Paid With Less Chasing"
+  description="Submit trucking invoices, capture delivery documents, check funding status, and connect with transportation finance companies from one owner operator app."
+>
+  <section class="hero" style="padding-bottom:2.5rem;">
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow">For Owner Operators</span>
+        <h1>You drive the truck. You should control the business.</h1>
+        <p class="lead" style="color:var(--text-muted);">
+          An owner operator cannot spend the day hauling freight and the night rebuilding paperwork.
+          Trucker Copilot keeps the load, documents, funding status, and finance connection in one
+          place so completed work can move forward.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="/download">Join as an Owner Operator</a>
+          <a class="btn btn--ghost btn--lg" href="/funding-network">Find a Finance Company</a>
+        </div>
+      </div>
+      <div style="display:flex; justify-content:center;">
+        <div class="phone-frame"><img src={shot} alt="Trucker Copilot owner operator dashboard" loading="eager" onerror="this.parentElement.classList.add('ph-fallback');this.remove()" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Built around the pressure you actually carry</h2>
+        <p>
+          Fuel, maintenance, insurance, payroll, and home expenses do not wait thirty, sixty, or
+          ninety days. Trucker Copilot helps you submit completed loads quickly, follow the
+          transaction, and connect with transportation finance providers when cash flow cannot wait
+          on a broker payment cycle.
+        </p>
+      </div>
+      <div class="grid grid--2 mt-2">
+        <div class="card">
+          <div class="card__icon">🚛</div>
+          <h3>Submit from the cab</h3>
+          <p>Capture the paperwork while the load is still fresh and send it without waiting to return to an office.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">👁️</div>
+          <h3>See the status</h3>
+          <p>Know whether the transaction is received, under review, missing information, approved, or funded when your provider supports the status.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🛡️</div>
+          <h3>Check before accepting risk</h3>
+          <p>Use available broker and shipper information to make a better decision before committing the truck.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📊</div>
+          <h3>Build your operating record</h3>
+          <p>Verified activity and payment history can strengthen the story your business tells over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Your truck moves the freight. Trucker Copilot moves the transaction."
+    primaryLabel="Join as an Owner Operator"
+    primaryHref="/download"
+    secondaryLabel="Find a Finance Company"
+    secondaryHref="/funding-network"
+  />
+</Base>

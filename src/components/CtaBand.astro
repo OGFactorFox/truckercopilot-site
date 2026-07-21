@@ -1,0 +1,23 @@
+---
+export interface Props {
+  headline: string;
+  body?: string;
+  primaryLabel: string;
+  primaryHref: string;
+  secondaryLabel?: string;
+  secondaryHref?: string;
+}
+const { headline, body, primaryLabel, primaryHref, secondaryLabel, secondaryHref } = Astro.props;
+---
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <h2>{headline}</h2>
+      {body && <p>{body}</p>}
+      <div class="hero__actions" style="justify-content:center; margin-top:1.8rem;">
+        <a class="btn btn--primary btn--lg" href={primaryHref}>{primaryLabel}</a>
+        {secondaryLabel && <a class="btn btn--ghost btn--lg" href={secondaryHref}>{secondaryLabel}</a>}
+      </div>
+    </div>
+  </div>
+</section>
