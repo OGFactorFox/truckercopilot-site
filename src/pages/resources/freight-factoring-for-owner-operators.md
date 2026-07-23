@@ -30,7 +30,7 @@ That is the whole mechanism. The complexity lives in the terms, which is where o
 
 **Service quality.** Your factor talks to your brokers on your behalf. A factor that verifies and funds promptly, answers the phone, and handles collections professionally protects your broker relationships. One that is slow or aggressive can damage them. Ask other carriers about their experience.
 
-**Technology.** How do you submit paperwork, and how fast does a submitted load become a funded load? Can you check broker credit before you book, so you know a load is fundable before you commit the truck? Can you see funding status without calling anyone? Modern document capture and status visibility remove most of the friction that used to make factoring feel like a paperwork job. For a full checklist of what a factor needs on each load, see [the documents required to factor a freight invoice](/resources/documents-needed-for-freight-factoring), and for the broker side, [how to check a freight broker before accepting a load](/resources/freight-broker-credit-check).
+**Technology.** How do you submit paperwork, and how fast does a submitted load become a funded load? Can you check broker credit before you book, so you know a load is fundable before you commit the truck? Can you see funding status without calling anyone? Modern document capture and status visibility remove most of the friction that used to make factoring feel like a paperwork job. For a full checklist of what a factor needs on each load, see [the documents you need to get paid for a load](/resources/documents-needed-for-freight-factoring), and for the broker side, [how to check a freight broker before accepting a load](/resources/freight-broker-credit-check).
 
 ## Is factoring right for your operation?
 

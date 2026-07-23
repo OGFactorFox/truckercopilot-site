@@ -1,0 +1,198 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const site = 'https://truckercopilot.com';
+
+const faqs = [
+  { q: 'Is the BOL scanner free?', a: 'Yes. Trucker Copilot is free on iOS and Android, and scanning documents is part of the core app. If you choose to work with a finance company through the app, that agreement and its terms are directly between you and the provider.' },
+  { q: 'What can I scan besides the bill of lading?', a: 'Rate confirmations, proofs of delivery, invoices, and supporting receipts such as lumper fees, detention records, and scale tickets. Multi-page documents stay together as one record.' },
+  { q: 'Does it work with my factoring company?', a: 'Trucker Copilot submits completed loads to participating finance companies in the funding network. If your provider is not participating yet, you can still capture and organize every document in the app, and you can request a connection for your provider.' },
+  { q: 'Is a phone photo really enough?', a: 'Yes, when it is legible and complete. Capture every page, keep signatures and dates readable, and photograph the signed copy before the truck leaves the gate. The app is built to make that fast enough to do at the dock.' },
+  { q: 'What happens after I submit?', a: 'The document set moves into the FactorEvo infrastructure for document reading and verification, then to your selected finance company for review. You follow each stage in the app. Funding decisions and timing always rest with the provider.' }
+];
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: site + '/' },
+      { '@type': 'ListItem', position: 2, name: 'Bill of Lading App', item: site + '/bol-scanner-app' }
+    ]
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a }
+    }))
+  }
+];
+---
+<Base
+  title="Bill of Lading App | Scan BOLs, Get Funded | Trucker Copilot"
+  description="Scan your BOL and rate confirmation from the cab, submit the completed load in one tap, and follow funding status instead of chasing it. Free trucking app."
+  schema={schema}
+>
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:2.5rem;">
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow">BOL Scanner</span>
+        <h1>The BOL app that gets you from delivered to funded.</h1>
+        <p class="lead" style="color:var(--text-muted); max-width:44em;">
+          Your bill of lading is proof you did the work. Trucker Copilot captures it from your phone
+          the moment the freight moves, pairs it with the rate confirmation and proof of delivery,
+          and sends the completed load to your participating finance company. No truck stop scanner,
+          no fax cover sheet, no wondering.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="/download">Get Trucker Copilot</a>
+          <a class="btn btn--ghost btn--lg" href="/how-it-works">See How It Works</a>
+        </div>
+        <p class="hero__trust">Free on iOS and Android. Built for owner operators, fleets, and dispatchers.</p>
+      </div>
+      <div style="display:flex; justify-content:center;">
+        <div class="phone-frame"><img src="/img/app/create-invoice.jpg" alt="Trucker Copilot BOL scanner capturing a bill of lading from the cab" loading="eager" onerror="this.parentElement.classList.add('ph-fallback');this.remove()" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section">
+    <div class="container hero__grid">
+      <div>
+        <h2>A BOL on the passenger seat is money on hold</h2>
+        <p style="color:var(--text-muted); font-size:1.1rem;">
+          Every day a signed bill of lading rides around uncaptured is a day the invoice behind it
+          cannot move. Brokers do not pay on memory, and finance providers cannot fund what they
+          cannot see. The BOL, the rate confirmation, and the signed POD are the evidence that the
+          load existed, moved at the agreed rate, and arrived. Trucker Copilot's job is to get that
+          evidence off the seat and into the transaction while you are still at the dock.
+        </p>
+        <p style="color:var(--text-muted);">
+          Not sure what a complete document set looks like? Start with
+          <a href="/resources/documents-needed-for-freight-factoring">the documents you need to get paid for a load</a>.
+        </p>
+      </div>
+      <img class="photo" src="/img/photos/doc-capture.jpg" alt="Driver photographing a signed bill of lading with the Trucker Copilot app" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="section section--soft">
+    <div class="container">
+      <h2>Scan it. Submit it. See it move.</h2>
+      <div class="grid grid--3 mt-2">
+        <div class="card">
+          <div class="card__icon">📸</div>
+          <h3>Capture every page</h3>
+          <p>Photograph the BOL at pickup and the signed copy at delivery, along with rate confirmations, invoices, lumper receipts, and detention records. Multi-page documents stay together.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📤</div>
+          <h3>Submit the completed load</h3>
+          <p>One tap sends the full document set into the FactorEvo infrastructure for reading, verification, and review by your selected finance company. No reentry, no email chains.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">📡</div>
+          <h3>Follow the funding status</h3>
+          <p>Watch the transaction move through submission, review, approval, and funding. If something is missing, you find out now, not on Friday.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU CAN CAPTURE -->
+  <section class="section">
+    <div class="container">
+      <h2>Every document a load generates</h2>
+      <div class="grid grid--2 mt-2">
+        <div class="card">
+          <div class="card__icon">📄</div>
+          <h3>Bill of lading</h3>
+          <p>Multi-page BOLs captured page by page and kept together, from the shipper's signature at pickup to the receiver's at delivery.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🤝</div>
+          <h3>Rate confirmation</h3>
+          <p>The broker's written agreement rides with the load record, so what you billed always matches what was agreed.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">✅</div>
+          <h3>Proof of delivery</h3>
+          <p>Photograph the signed POD before the truck leaves the gate. It is the single most important document for funding.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🧾</div>
+          <h3>Invoices and receipts</h3>
+          <p>Invoices, lumper receipts, detention records, and scale tickets, attached to the load they belong to instead of a jacket pocket.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAB REALITY -->
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Built for a cab, not an office</h2>
+        <p>
+          Weak signal at the dock, low light in the sleeper, and a receiver who wants the paperwork
+          back in forty-five seconds. The capture flow is built for that reality. And every clean
+          document you capture becomes part of the verified operating record and the
+          <a href="/signals">Signals</a> that give finance companies better context on your business.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT IS FOR -->
+  <section class="section">
+    <div class="container">
+      <h2>Who runs their paperwork through Trucker Copilot</h2>
+      <div class="grid grid--3 mt-2">
+        <a href="/owner-operators" class="card" style="text-decoration:none; display:block;">
+          <div class="card__icon">🔑</div>
+          <h3 style="color:var(--text);">Owner operators</h3>
+          <p>Capture at the dock, submit from the cab, and stop donating evenings to paperwork.</p>
+        </a>
+        <a href="/fleets" class="card" style="text-decoration:none; display:block;">
+          <div class="card__icon">🏢</div>
+          <h3 style="color:var(--text);">Fleets</h3>
+          <p>Get PODs out of drivers' phones and into the transaction without the Friday chase.</p>
+        </a>
+        <a href="/dispatchers" class="card" style="text-decoration:none; display:block;">
+          <div class="card__icon">🗺️</div>
+          <h3 style="color:var(--text);">Dispatchers</h3>
+          <p>Work from the same connected load record as your carriers and their finance company.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--soft">
+    <div class="container container--narrow">
+      <h2 style="margin-bottom:1rem;">Bill of lading app questions</h2>
+      {faqs.map((f) => (
+        <details class="faq-item">
+          <summary>{f.q}</summary>
+          <div><p style="margin:0;">{f.a}</p></div>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Get the paperwork off the seat."
+    body="Capture the BOL, send the proof, and follow the money from the road."
+    primaryLabel="Get Trucker Copilot"
+    primaryHref="/download"
+    secondaryLabel="What Documents Do You Need?"
+    secondaryHref="/resources/documents-needed-for-freight-factoring"
+  />
+</Base>

@@ -4,7 +4,7 @@ import CtaBand from '../components/CtaBand.astro';
 
 const { frontmatter } = Astro.props;
 const site = 'https://truckercopilot.com';
-const path = Astro.url.pathname.replace(/\/$/, '');
+const path = Astro.url.pathname.replace(/index\.html$/, '').replace(/\.html$/, '').replace(/\/$/, '');
 const schema = [
   {
     '@context': 'https://schema.org',
@@ -14,7 +14,8 @@ const schema = [
     author: { '@type': 'Organization', name: 'Trucker Copilot' },
     publisher: { '@type': 'Organization', name: 'Trucker Copilot', url: site },
     mainEntityOfPage: site + path,
-    datePublished: frontmatter.date || '2026-07-21'
+    datePublished: frontmatter.date || '2026-07-21',
+    dateModified: frontmatter.updated || frontmatter.date || '2026-07-21'
   },
   {
     '@context': 'https://schema.org',

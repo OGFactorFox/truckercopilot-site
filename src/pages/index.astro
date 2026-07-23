@@ -7,14 +7,6 @@ const shots = ['/img/app/create-invoice.jpg', '/img/app/dashboard.jpg'];
 const schema = [
   {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Trucker Copilot',
-    url: 'https://truckercopilot.com',
-    logo: 'https://truckercopilot.com/brand/logo-big.png',
-    parentOrganization: { '@type': 'Organization', name: 'FactorEvo Group Holdings' }
-  },
-  {
-    '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: 'Trucker Copilot',
     operatingSystem: 'iOS, Android',
@@ -24,13 +16,14 @@ const schema = [
       'https://apps.apple.com/us/app/trucker-copilot/id6743716262',
       'https://play.google.com/store/apps/details?id=com.truckercopilot.truckercopilotapp'
     ],
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     description: 'Capture load documents, follow funding status, and connect with transportation finance companies through one trucking app built for drivers and carriers.'
   }
 ];
 ---
 <Base
-  title="Trucker Copilot | From Delivered to Funded"
-  description="Capture load documents, follow funding status, and connect with transportation finance companies through one trucking app built for drivers and carriers."
+  title="Trucker Copilot | Freight Factoring App for Truckers"
+  description="The free trucking app that captures load documents, tracks funding status, and connects you with participating factoring companies. On iOS and Android."
   schema={schema}
 >
   <!-- HERO -->
@@ -49,7 +42,7 @@ const schema = [
           <a class="btn btn--primary btn--lg" href="/download">Get Trucker Copilot</a>
           <a class="btn btn--ghost btn--lg" href="/how-it-works">See How It Works</a>
         </div>
-        <p class="hero__trust">For drivers, owner operators, dispatchers, and fleets.</p>
+        <p class="hero__trust">For drivers, owner operators, dispatchers, and fleets. Free on iOS and Android.</p>
       </div>
       <div style="display:flex; gap:1.2rem; justify-content:center;">
         <div class="phone-frame"><img src={shots[0]} alt="Trucker Copilot app screen showing load and document workflow" loading="eager" onerror="this.parentElement.classList.add('ph-fallback');this.remove()" /></div>
@@ -81,7 +74,7 @@ const schema = [
         <div class="card">
           <div class="card__icon">📸</div>
           <h3>Capture it</h3>
-          <p>Upload invoices, rate confirmations, bills of lading, proof of delivery, and supporting documents directly from your phone.</p>
+          <p>Upload invoices, rate confirmations, bills of lading, proof of delivery, and supporting documents directly from your phone with the <a href="/bol-scanner-app">BOL scanner</a>.</p>
         </div>
         <div class="card">
           <div class="card__icon">✅</div>
