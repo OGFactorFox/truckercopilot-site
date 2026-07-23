@@ -8,6 +8,9 @@ const paths = [
   { icon: '🗺️', t: 'I am a dispatcher', d: 'Join the carriers you support and work from the same connected load record.' },
   { icon: '💰', t: 'I need a finance company', d: 'Tell us about the business and request a connection to participating providers.' }
 ];
+
+const APP_STORE_URL = 'https://apps.apple.com/us/app/trucker-copilot/id6743716262';
+const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.truckercopilot.truckercopilotapp';
 ---
 <Base
   title="Download Trucker Copilot | Join the Transportation Finance Network"
@@ -22,9 +25,30 @@ const paths = [
           Join Trucker Copilot to capture load documents, follow transaction status, build an
           operating record, and connect with participating transportation finance companies.
         </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary btn--lg" href="https://apps.apple.com/us/app/trucker-copilot/id6743716262" rel="noopener" target="_blank">Download on the App Store</a>
-          <a class="btn btn--primary btn--lg" href="https://play.google.com/store/apps/details?id=com.truckercopilot.truckercopilotapp" rel="noopener" target="_blank">Get it on Google Play</a>
+
+        <div class="store-badges">
+          <a class="store-badge" href={APP_STORE_URL} rel="noopener" target="_blank" aria-label="Download Trucker Copilot on the App Store">
+            <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
+              <rect x="0.5" y="0.5" width="119" height="39" rx="6.5" fill="#000" stroke="#A6A6A6"/>
+              <path fill="#fff" transform="translate(11 10) scale(0.039)" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+              <text x="34" y="16" fill="#fff" font-family="-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="7">Download on the</text>
+              <text x="33.5" y="31" fill="#fff" font-family="-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600">App Store</text>
+            </svg>
+          </a>
+
+          <a class="store-badge" href={GOOGLE_PLAY_URL} rel="noopener" target="_blank" aria-label="Get Trucker Copilot on Google Play">
+            <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
+              <rect x="0.5" y="0.5" width="134" height="39" rx="6.5" fill="#000" stroke="#A6A6A6"/>
+              <g transform="translate(12 9)">
+                <path fill="#00C3FF" d="M0 0 L0 22 L5.5 11 Z"/>
+                <path fill="#FF3B30" d="M0 0 L16.5 8 L5.5 11 Z"/>
+                <path fill="#00D26A" d="M16.5 8 L16.5 14 L5.5 11 Z"/>
+                <path fill="#FFCE00" d="M16.5 14 L0 22 L5.5 11 Z"/>
+              </g>
+              <text x="37" y="16" fill="#fff" font-family="Roboto,Arial,sans-serif" font-size="7" letter-spacing="0.6">GET IT ON</text>
+              <text x="36" y="31" fill="#fff" font-family="Roboto,Arial,sans-serif" font-size="15" font-weight="500">Google Play</text>
+            </svg>
+          </a>
         </div>
       </div>
       <div style="display:flex; justify-content:center;">
@@ -53,3 +77,35 @@ const paths = [
     </div>
   </section>
 </Base>
+
+<style>
+  .store-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+  }
+  .store-badge {
+    display: inline-flex;
+    border-radius: 8px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  }
+  .store-badge svg {
+    height: 54px;
+    width: auto;
+    display: block;
+  }
+  .store-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px -10px rgba(0, 0, 0, 0.7);
+    opacity: 0.96;
+  }
+  .store-badge:focus-visible {
+    outline: 2px solid #4c8dff;
+    outline-offset: 3px;
+  }
+  @media (max-width: 480px) {
+    .store-badge svg { height: 48px; }
+  }
+</style>
