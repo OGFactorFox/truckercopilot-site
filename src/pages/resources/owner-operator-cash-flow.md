@@ -30,7 +30,7 @@ Every day in that gap is a day you personally finance your customer's freight bi
 
 ## Where financing options fit
 
-Even with perfect habits, terms of 30 days or more mean someone finances the gap. Options include broker quick pay (fast but per-broker and often costly), a line of credit (flexible but hard to get early on), and factoring, where a finance company advances money against your invoice and collects from the broker. Factoring structures differ in cost and in who carries the risk of a broker not paying; the tradeoffs are explained in [recourse and nonrecourse factoring](/resources/recourse-vs-nonrecourse-factoring). Whatever route fits, financing works best as a tool for compressing the gap on your terms, not a substitute for knowing your numbers.
+Even with perfect habits, terms of 30 days or more mean someone finances the gap. Options include broker quick pay (fast but per-broker and often costly), a line of credit (flexible but hard to get early on), and factoring, where a finance company advances money against your invoice and collects from the broker. Factoring structures differ in cost and in who carries the risk of a broker not paying; the tradeoffs are explained in [recourse and nonrecourse factoring](/resources/recourse-vs-nonrecourse-factoring), and the head-to-head between the two fastest options is covered in [factoring vs quick pay](/resources/factoring-vs-quick-pay). Whatever route fits, financing works best as a tool for compressing the gap on your terms, not a substitute for knowing your numbers.
 
 ## Where Trucker Copilot fits
 
