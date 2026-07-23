@@ -12,14 +12,40 @@ export interface Props {
 
 const { title, description, path = Astro.url.pathname, schema } = Astro.props;
 const site = 'https://truckercopilot.com';
-const canonical = site + (path === '/' ? '/' : path.replace(/\/$/, ''));
-const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+// Normalize build-time paths (/page.html, /section/index.html) to the clean
+// extensionless URLs the site serves, so canonical and og:url match the sitemap.
+const cleanPath = path.replace(/index\.html$/, '').replace(/\.html$/, '');
+const canonical = site + (cleanPath === '/' ? '/' : cleanPath.replace(/\/$/, ''));
+
+const APP_STORE_URL = 'https://apps.apple.com/us/app/trucker-copilot/id6743716262';
+const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.truckercopilot.truckercopilotapp';
+
+const baseSchemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Trucker Copilot',
+    url: site + '/',
+    logo: site + '/brand/logo-big.png',
+    sameAs: [APP_STORE_URL, GOOGLE_PLAY_URL],
+    parentOrganization: { '@type': 'Organization', name: 'FactorEvo Group Holdings' }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Trucker Copilot',
+    url: site + '/'
+  }
+];
+const pageSchemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+const schemas = [...baseSchemas, ...pageSchemas];
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-itunes-app" content="app-id=6743716262" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />

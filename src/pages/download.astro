@@ -11,10 +11,23 @@ const paths = [
 
 const APP_STORE_URL = 'https://apps.apple.com/us/app/trucker-copilot/id6743716262';
 const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.truckercopilot.truckercopilotapp';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Trucker Copilot',
+  operatingSystem: 'iOS, Android',
+  applicationCategory: 'BusinessApplication',
+  url: 'https://truckercopilot.com/download',
+  installUrl: [APP_STORE_URL, GOOGLE_PLAY_URL],
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  description: 'Free trucking app to capture load documents, follow funding status, and connect with participating transportation finance companies.'
+};
 ---
 <Base
-  title="Download Trucker Copilot | Join the Transportation Finance Network"
-  description="Download Trucker Copilot or register your carrier to submit load documents, follow funding status, and connect with participating finance companies."
+  title="Download Trucker Copilot | Free App for Owner Operators"
+  description="Get Trucker Copilot free on iOS and Android. Scan BOLs and PODs, submit loads to your finance company, and follow funding status from the cab."
+  schema={schema}
 >
   <section class="hero" style="padding-bottom:2.5rem;">
     <div class="container hero__grid">

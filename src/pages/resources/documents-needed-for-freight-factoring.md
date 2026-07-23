@@ -1,14 +1,15 @@
 ---
 layout: ../../layouts/Article.astro
-title: "The Documents Required to Factor a Freight Invoice"
-seoTitle: "Documents Needed for Freight Factoring | Trucker Copilot"
-description: "The documents needed for freight factoring: invoice, rate confirmation, BOL, proof of delivery, notice of assignment, and receipts, plus what stalls funding."
+title: "What Documents Do You Need to Get Paid for a Load?"
+seoTitle: "Documents You Need to Get Paid for a Load | Trucker Copilot"
+description: "To get paid for a load you need the rate confirmation, signed BOL, proof of delivery, and your invoice, plus receipts for accessorials. What each must show."
 date: "2026-07-21"
+updated: "2026-07-23"
 ---
 
-To factor a freight invoice, you generally need five things: your invoice, the broker's rate confirmation, the signed bill of lading, proof of delivery, and any supporting receipts such as lumper or detention documentation. The notice of assignment is handled once at setup rather than per load, but it is part of the picture too. Together these documents prove one simple story: this load existed, it was hauled at this rate, it was delivered, and the right party owes the money.
+To get paid for a load, you need four documents almost every time: the broker's rate confirmation, the bill of lading signed at pickup, the proof of delivery signed by the receiver, and your invoice. If the load generated extra charges, add the receipts that back them up, such as lumper fees, detention times, and scale tickets. If you factor the invoice, one more piece, the notice of assignment, sits behind the whole arrangement. Together these documents prove one simple story: this load existed, it was hauled at this rate, it was delivered, and the right party owes the money.
 
-Finance providers advance funds against invoices before the broker pays, so the paperwork is their evidence. A missing signature or a rate mismatch is not a formality problem; it is a gap in the evidence, and gaps stall funding. Here is what each document does and where carriers most often go wrong.
+That story is the same whether the invoice goes to the broker's accounts payable desk or to a finance provider who advances funds against it. The difference is speed and scrutiny. A factor reviews the evidence within hours and funds against it, so gaps surface immediately. A broker's payment clerk may sit on the same gap for three weeks and then short pay. Either way, the paperwork is the payment. Here is what each document does and where carriers most often go wrong.
 
 ## The invoice
 
@@ -36,7 +37,7 @@ Common problems: no receiver signature, no delivery date, notations of damage or
 
 ## Notice of assignment
 
-The notice of assignment, or NOA, is a letter telling the broker that payment on your invoices has been assigned to your finance provider and must be sent to them. It is usually put in place when you start the relationship and applies to your account rather than being re-created for every load. Brokers take NOAs seriously because paying the wrong party can mean paying twice.
+This one applies when you factor. The notice of assignment, or NOA, is a letter telling the broker that payment on your invoices has been assigned to your finance provider and must be sent to them. It is usually put in place when you start the relationship and applies to your account rather than being re-created for every load. Brokers take NOAs seriously because paying the wrong party can mean paying twice.
 
 Common problems: a broker who never received or acknowledged the NOA, or a carrier switching providers without the release and new NOA being processed cleanly. Overlapping assignments freeze payments fast.
 
@@ -46,8 +47,12 @@ If your invoice includes accessorials, each one needs backup. A lumper receipt s
 
 Common problems: billing detention with no time records, or a lumper receipt that stayed in a jacket pocket until long after the invoice went out. Undocumented accessorials get stripped from the payment, and the resulting short pay slows everything down.
 
+## If you bill the broker directly
+
+Direct billing uses the same evidence, minus the notice of assignment. Send the invoice with the signed BOL or POD attached, reference the load number from the rate confirmation, and keep the broker's stated payment terms with the file. The most common direct-bill delays mirror the factoring list: totals that do not match the rate con, missing PODs, and accessorials with no backup. If broker terms stretch further than your cash flow can carry, that is usually the point where carriers start comparing [factoring and other funding options](/resources/freight-factoring-for-owner-operators).
+
 ## Why clean paperwork is a payment strategy
 
 Every document problem above adds a request, a callback, and days of delay. Carriers who capture complete, legible documents at the moment of pickup and delivery consistently move from delivered to funded faster than carriers who batch paperwork at the end of the week. It is the most controllable lever in the whole payment cycle, as we cover in [how to get paid faster after delivering a load](/resources/how-to-get-paid-faster-after-delivering-a-load).
 
-This is the core of what Trucker Copilot does. The app captures the invoice, rate confirmation, BOL, and proof of delivery from the driver's phone, confirms delivery, and submits the completed load, then shows funding status so nothing disappears into a fax queue. That captured, verified activity becomes [signals](/signals) that give participating finance companies in the [FactorEvo funding network](/funding-network) better context on each load. Funding decisions and timing always rest with the selected provider, but complete documents remove the most common reasons for a stall. See the full document workflow under [features](/features).
+This is the core of what Trucker Copilot does. The app's [BOL scanner](/bol-scanner-app) captures the invoice, rate confirmation, BOL, and proof of delivery from the driver's phone, confirms delivery, and submits the completed load, then shows funding status so nothing disappears into a fax queue. That captured, verified activity becomes [signals](/signals) that give participating finance companies in the [FactorEvo funding network](/funding-network) better context on each load. Funding decisions and timing always rest with the selected provider, but complete documents remove the most common reasons for a stall. See the full document workflow under [features](/features).

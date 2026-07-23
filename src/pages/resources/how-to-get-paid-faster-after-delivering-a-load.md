@@ -18,7 +18,7 @@ Then carriers add avoidable delay on their side. A bill of lading that sits in t
 
 ## The levers a carrier actually controls
 
-**Capture complete documents at delivery.** Before the truck leaves the receiver, you should have a signed bill of lading or proof of delivery, legible and complete. If there was a lumper fee or detention, get the receipt or the times documented right there. Chasing a signature two weeks later is the single most common self-inflicted payment delay. Our guide to [the documents required to factor a freight invoice](/resources/documents-needed-for-freight-factoring) breaks down exactly what each paperwork item needs to show.
+**Capture complete documents at delivery.** Before the truck leaves the receiver, you should have a signed bill of lading or proof of delivery, legible and complete. If there was a lumper fee or detention, get the receipt or the times documented right there. Chasing a signature two weeks later is the single most common self-inflicted payment delay. Our guide to [the documents you need to get paid for a load](/resources/documents-needed-for-freight-factoring) breaks down exactly what each paperwork item needs to show.
 
 **Submit the same day.** An invoice submitted the day of delivery starts the payment clock immediately. An invoice mailed at the end of the week adds five to seven days before anyone has even looked at it. Drivers who photograph documents at the dock and submit from the phone remove that lag entirely.
 
