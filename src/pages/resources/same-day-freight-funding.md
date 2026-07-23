@@ -6,7 +6,7 @@ description: "What actually determines whether same day freight factoring happen
 date: "2026-07-21"
 ---
 
-Same day freight factoring is possible, but it is never automatic. Whether the money from a factored invoice lands in your account the same day you submit the load depends on a chain of steps, and every link in that chain has to close before the banking day ends. The finance provider you work with sets its own cutoff times, verification standards, and funding methods, so timing is always determined by that provider, not by any app, marketing page, or rule of thumb.
+Same day freight factoring is possible, but it is never automatic. (New to factoring entirely? [The complete carrier guide](/resources/freight-factoring-guide) covers the mechanics this article builds on.) Whether the money from a factored invoice lands in your account the same day you submit the load depends on a chain of steps, and every link in that chain has to close before the banking day ends. The finance provider you work with sets its own cutoff times, verification standards, and funding methods, so timing is always determined by that provider, not by any app, marketing page, or rule of thumb.
 
 The honest answer to "will I get funded today" is: it depends on when you submit, whether your paperwork is complete, how quickly the load can be verified, the creditworthiness of the broker or shipper, and which banking rails the provider uses to move money. If you understand each of those, you can stack the odds in your favor. You still cannot guarantee the outcome, and neither can we.
 

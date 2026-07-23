@@ -8,7 +8,7 @@ date: "2026-07-21"
 
 Freight factoring is a financial arrangement where an owner operator sells a delivered load's invoice to a factoring company and receives most of the invoice value as an advance, usually within a few business days, instead of waiting 30 to 90 days for the broker or shipper to pay. The factor then collects the full amount from the broker and settles the difference with the carrier, minus its fee.
 
-For an owner operator running one or two trucks, the appeal is straightforward: fuel, insurance, and truck payments are due now, while freight revenue arrives on someone else's schedule. Factoring converts a slow receivable into working cash. The tradeoff is the fee, plus contract terms that vary widely between providers. Understanding what to compare matters more than any single headline rate.
+For an owner operator running one or two trucks, the appeal is straightforward: fuel, insurance, and truck payments are due now, while freight revenue arrives on someone else's schedule. Factoring converts a slow receivable into working cash. The tradeoff is the fee, plus contract terms that vary widely between providers. Understanding what to compare matters more than any single headline rate. This guide covers the owner-operator angle; for the full mechanics, costs, and a worked fee example, see [the complete carrier guide to freight factoring](/resources/freight-factoring-guide).
 
 ## How factoring actually works
 

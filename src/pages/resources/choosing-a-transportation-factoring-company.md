@@ -8,7 +8,7 @@ date: "2026-07-21"
 
 There is no single best factoring company for trucking. The right provider for a one-truck owner operator hauling spot freight is often the wrong one for a 30-truck fleet with contract lanes, and vice versa. Anyone who tells you one company is best for everyone is usually selling that company. What actually exists is a set of evaluation criteria, and a factoring agreement that fits your operation on every one of them.
 
-Factoring, briefly: you sell your freight invoices to a finance company at a discount, and they advance you most of the invoice value now instead of you waiting 30 to 60 days for the broker to pay. The details of that arrangement, the rate, the advance, the recourse terms, the contract length, are where good and bad deals diverge.
+Factoring, briefly: you sell your freight invoices to a finance company at a discount, and they advance you most of the invoice value now instead of you waiting 30 to 60 days for the broker to pay. The details of that arrangement, the rate, the advance, the recourse terms, the contract length, are where good and bad deals diverge. If you want the mechanics from the ground up first, start with [the complete carrier guide to freight factoring](/resources/freight-factoring-guide), then come back to the checklist.
 
 ## The criteria that separate providers
 
